@@ -1,0 +1,30 @@
+/**
+* Causes both dancers to take up their positions.
+*/
+public void takeUpYourPositions()
+{
+//dancer1 hop to centre and turn red
+while (this.getDancer1().getPosition() < 6)
+{
+this.getDancer1().jump();
+this.getDancer1().right();
+}
+while (this.getDancer1().getPosition() > 6)
+{
+this.getDancer1().jump();
+this.getDancer1().left();
+}
+this.getDancer1().setColour(OUColour.RED);
+//dancer2 hop to centre and turn red
+while (this.getDancer2().getPosition() < 6)
+{
+this.getDancer2().jump();
+this.getDancer2().right();
+}
+while (this.getDancer2().getPosition() > 6)
+{
+this.getDancer2().jump();
+this.getDancer2().left();
+}
+this.getDancer2().setColour(OUColour.RED);
+}
