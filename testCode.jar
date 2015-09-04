@@ -1,3 +1,4 @@
+'''java
 /**
 * Causes both dancers to take up their positions.
 */
@@ -28,3 +29,4 @@ this.getDancer2().left();
 }
 this.getDancer2().setColour(OUColour.RED);
 }
+'''
